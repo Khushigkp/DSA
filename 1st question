@@ -1,0 +1,20 @@
+/*Find the number of factors for a given integer N.
+
+Constraints:
+1 <= N <= 100000
+*/
+ // answer
+ class Solution {
+  public:
+    int countFactors(int N) {
+        int count=1;
+        for(int i=1; i<=N/2; i++)
+        {
+          if(N%i==0) 
+          {
+              ++count;
+          }
+        }
+       return count; 
+    }
+};
